@@ -20,7 +20,7 @@
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/QuickImgur.git
+   git clone https://github.com/B4l3rI0n/QuickImgur.git
    cd QuickImgur
 
 2. **Install Dependencies**:
