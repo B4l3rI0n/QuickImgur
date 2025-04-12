@@ -35,7 +35,7 @@ def upload_to_imgur(image_data, is_file=True):
         response = requests.post(UPLOAD_URL, headers=headers, files=files, timeout=10)
         if response.status_code == 200:
             image_url = response.json()["data"]["link"]
-            return f"[]({image_url})"
+            return f"![]({image_url})"
         else:
             return f"Error uploading image: HTTP {response.status_code}"
     except requests.RequestException as e:
