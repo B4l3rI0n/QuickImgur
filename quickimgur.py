@@ -14,7 +14,7 @@ import signal
 import sys
 
 # Configuration
-IMGUR_CLIENT_ID = "xxxx"
+IMGUR_CLIENT_ID = os.getenv("IMGUR_CLIENT_ID", "your_client_id_here")
 UPLOAD_URL = "https://api.imgur.com/3/upload"
 WATCH_FOLDER = os.path.expanduser("~/Downloads")
 ENABLE_GUI = True  # Enable GUI (paste/select) by default
