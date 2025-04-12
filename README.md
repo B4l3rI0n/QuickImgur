@@ -1,6 +1,6 @@
 # QuickImgur
 
-![Python](https://img.shields.io/badge/python-3.6%2B-blue)
+![Python](https://img.shields.io/badge/python-3%2B-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![Status](https://img.shields.io/badge/status-active-brightgreen)
 
@@ -29,10 +29,11 @@
    source ./bin/activate
    ```
 4. **Install Dependencies**:
-   Ensure Python 3.6+ is installed, then:
    ```bash
    pip install -r requirements.txt
+   ```
    or if you are using venv
+   ```bash
    ./bin/pip install -r requirements.txt
    ```
    On Linux, you may need Tkinter:
@@ -40,7 +41,7 @@
    sudo apt-get install python3-tk xclip
    ```
 
-5. **Get an Imgur Client ID**:
+6. **Get an Imgur Client ID**:
    - Register at [Imgur API](https://api.imgur.com/oauth2/addclient).
    - Copy your Client ID.
    - Set it in `quickimgur.py`:
@@ -107,7 +108,7 @@ Pillow
 pyperclip
 watchdog
 ```
-- **Python**: 3.6 or higher.
+- **Python**: .
 - **OS**: Tested on Linux (Kali); should work on Windows/Mac with Tkinter and clipboard support.
 - **Dependencies**: Install via `pip install -r requirements.txt`.
 - **Clipboard**: Requires `xclip` or similar on Linux for clipboard pasting.
