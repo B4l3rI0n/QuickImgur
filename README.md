@@ -26,15 +26,14 @@
 2. **Set Up a Virtual Environment** (Recommended):
    ```bash
    python3 -m venv .
-   source ./bin/activate
    ```
 4. **Install Dependencies**:
    ```bash
-   pip install -r requirements.txt
+   pip install requests Pillow pyperclip watchdog
    ```
    or if you are using venv
    ```bash
-   ./bin/pip install -r requirements.txt
+   ./bin/pip install requests Pillow pyperclip watchdog
    ```
    On Linux, you may need Tkinter:
    ```bash
@@ -43,6 +42,7 @@
 
 6. **Get an Imgur Client ID**:
    - Register at [Imgur API](https://api.imgur.com/oauth2/addclient).
+   - Select: OAuth 2 authorization without a callback URL
    - Copy your Client ID.
    - Set it in `quickimgur.py`:
      
