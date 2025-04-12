@@ -23,32 +23,41 @@
    git clone https://github.com/B4l3rI0n/QuickImgur.git
    cd QuickImgur
 
-2. **Install Dependencies**:
+2. **Set Up a Virtual Environment** (Recommended):
+   ```bash
+   python3 -m venv .
+   source ./bin/activate
+   ```
+4. **Install Dependencies**:
    Ensure Python 3.6+ is installed, then:
    ```bash
    pip install -r requirements.txt
+   or if you are using venv
+   ./bin/pip install -r requirements.txt
    ```
    On Linux, you may need Tkinter:
    ```bash
-   sudo apt-get install python3-tk
+   sudo apt-get install python3-tk xclip
    ```
 
-3. **Get an Imgur Client ID**:
+5. **Get an Imgur Client ID**:
    - Register at [Imgur API](https://api.imgur.com/oauth2/addclient).
    - Copy your Client ID.
    - Set it in `quickimgur.py`:
-     ```python
-     IMGUR_CLIENT_ID = "your_client_id_here"
-     ```
-     Alternatively, use an environment variable:
-     ```bash
-     export IMGUR_CLIENT_ID="your_client_id_here"
-     ```
-     Then modify `quickimgur.py`:
-     ```python
-     IMGUR_CLIENT_ID = os.getenv("IMGUR_CLIENT_ID", "default_client_id")
-     ```
-
+     
+        ```python
+        IMGUR_CLIENT_ID = "your_client_id_here"
+        ```
+        Alternatively, use an environment variable:
+        ```bash
+        export IMGUR_CLIENT_ID="your_client_id_here"
+        ```
+        Add to `~/.bashrc` or `~/.zshrc` for persistence:
+        ```bash
+         echo 'export IMGUR_CLIENT_ID="your_client_id_here"' >> ~/.bashrc
+         source ~/.bashrc
+        ```
+     
 ## Usage
 
 Run the script:
